@@ -1,0 +1,119 @@
+
+    <html>
+    <head>
+        <title>Terminal de Análise de Mercado</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            body { font-family: 'Inter', sans-serif; background: #0b0f19; color: #e2e8f0; padding: 20px; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+            .card { background: #161e2e; border-radius: 12px; padding: 20px; border: 1px solid #2d3748; }
+            .header { border-bottom: 2px solid #1e293b; margin-bottom: 20px; padding-bottom: 10px; }
+            .status-up { color: #34d399; font-weight: bold; }
+            .status-down { color: #fb7185; font-weight: bold; }
+            .chart-box { height: 250px; margin-top: 15px; }
+        </style>
+    </head>
+    <body>
+        <div class="header"><h1>Análise de Mercado - BI Engine</h1></div>
+        <div class="grid">
+    
+        <div class="card">
+            <h2 style="color:#38bdf8; margin:0;">AAPL</h2>
+            <p>Preço Atual: <strong>$0.00</strong></p>
+            <p>Performance vs Média Banco: <span class="status-up">+0.00%</span></p>
+            <div class="chart-box"><canvas id="chart-AAPL"></canvas></div>
+        </div>
+        <script>
+            new Chart(document.getElementById('chart-AAPL'), {
+                type: 'bar',
+                data: {
+                    labels: ['Lucro (Bi)', 'Custos (Bi)'],
+                    datasets: [
+                        { label: '2024', data: [97.0, 268.0], backgroundColor: '#475569' },
+                        { label: '2025', data: [105.2, 282.0], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff' } } } }
+            });
+        </script>
+        
+        <div class="card">
+            <h2 style="color:#38bdf8; margin:0;">GOOGL</h2>
+            <p>Preço Atual: <strong>$0.00</strong></p>
+            <p>Performance vs Média Banco: <span class="status-up">+0.00%</span></p>
+            <div class="chart-box"><canvas id="chart-GOOGL"></canvas></div>
+        </div>
+        <script>
+            new Chart(document.getElementById('chart-GOOGL'), {
+                type: 'bar',
+                data: {
+                    labels: ['Lucro (Bi)', 'Custos (Bi)'],
+                    datasets: [
+                        { label: '2024', data: [73.8, 212.0], backgroundColor: '#475569' },
+                        { label: '2025', data: [88.5, 225.0], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff' } } } }
+            });
+        </script>
+        
+        <div class="card">
+            <h2 style="color:#38bdf8; margin:0;">MSFT</h2>
+            <p>Preço Atual: <strong>$0.00</strong></p>
+            <p>Performance vs Média Banco: <span class="status-up">+0.00%</span></p>
+            <div class="chart-box"><canvas id="chart-MSFT"></canvas></div>
+        </div>
+        <script>
+            new Chart(document.getElementById('chart-MSFT'), {
+                type: 'bar',
+                data: {
+                    labels: ['Lucro (Bi)', 'Custos (Bi)'],
+                    datasets: [
+                        { label: '2024', data: [88.1, 145.0], backgroundColor: '#475569' },
+                        { label: '2025', data: [102.3, 160.0], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff' } } } }
+            });
+        </script>
+        
+        <div class="card">
+            <h2 style="color:#38bdf8; margin:0;">NVDA</h2>
+            <p>Preço Atual: <strong>$0.00</strong></p>
+            <p>Performance vs Média Banco: <span class="status-up">+0.00%</span></p>
+            <div class="chart-box"><canvas id="chart-NVDA"></canvas></div>
+        </div>
+        <script>
+            new Chart(document.getElementById('chart-NVDA'), {
+                type: 'bar',
+                data: {
+                    labels: ['Lucro (Bi)', 'Custos (Bi)'],
+                    datasets: [
+                        { label: '2024', data: [29.7, 18.0], backgroundColor: '#475569' },
+                        { label: '2025', data: [65.4, 25.0], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff' } } } }
+            });
+        </script>
+        
+        <div class="card">
+            <h2 style="color:#38bdf8; margin:0;">AMZN</h2>
+            <p>Preço Atual: <strong>$0.00</strong></p>
+            <p>Performance vs Média Banco: <span class="status-up">+0.00%</span></p>
+            <div class="chart-box"><canvas id="chart-AMZN"></canvas></div>
+        </div>
+        <script>
+            new Chart(document.getElementById('chart-AMZN'), {
+                type: 'bar',
+                data: {
+                    labels: ['Lucro (Bi)', 'Custos (Bi)'],
+                    datasets: [
+                        { label: '2024', data: [30.4, 545.0], backgroundColor: '#475569' },
+                        { label: '2025', data: [42.1, 570.0], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff' } } } }
+            });
+        </script>
+        </div></body></html>
